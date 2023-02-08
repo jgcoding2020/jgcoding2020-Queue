@@ -58,7 +58,7 @@ public class QueueExercise {
      * @param item a String that should be added to Queue.
      */
     public void addToEndOfQueue(Queue<String> queue, String item){
-        queue.add(item);
+        queue.offer(item);
     }
 
     /**
@@ -68,7 +68,7 @@ public class QueueExercise {
      * @return the next String due to be removed (polled) from the Queue<String> (the oldest item in the queue.)
      */
     public String removeFromStartOfQueue(Queue<String> queue){
-        String queueHead = queue.remove();
+        String queueHead = queue.poll();
         return queueHead;
     }
 
